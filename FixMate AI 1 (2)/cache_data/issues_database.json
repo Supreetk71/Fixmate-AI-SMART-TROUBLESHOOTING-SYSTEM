@@ -1,0 +1,21 @@
+{
+  "value": [
+    {
+      "problem": "screen flickering Windows display glitch",
+      "solution": "taskkill /F /IM explorer.exe && start explorer.exe",
+      "description": "Restarts Windows Explorer to fix display issues."
+    },
+    {
+      "problem": "wifi internet connection not working network down",
+      "solution": "netsh winsock reset && ipconfig /release && ipconfig /renew",
+      "description": "Resets network stack and renews IP address."
+    },
+    {
+      "problem": "computer running slow performance lag",
+      "solution": "tasklist /svc && taskkill /F /IM chrome.exe",
+      "description": "Lists processes and terminates memory-heavy Chrome."
+    }
+  ],
+  "timestamp": 1757764847.7393126,
+  "ttl": 300
+}
